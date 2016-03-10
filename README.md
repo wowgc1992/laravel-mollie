@@ -19,12 +19,12 @@ Via Composer
 
 After updating composer, add the MollieServiceProvider to the providers array in config/app.php
 
-    petericebear\Mollie\Providers\MollieServiceProvider::class,
+    PeterIcebear\Mollie\Providers\MollieServiceProvider::class,
 
 You need to publish the config for this package. A sample configuration is provided. The defaults will be merged with gateway specific configuration.
 
-    $ php artisan vendor:publish --provider="petericebear\Mollie\Providers\MollieServiceProvider"
+    $ php artisan vendor:publish --provider="PeterIcebear\Mollie\MollieServiceProvider"
 
 To use the Facade (`\Mollie::getMethods()` instead of `App::make('mollie')->getMethods()`), add that to the facades array.
 
-     'Mollie' => petericebear\Mollie\Facades\Mollie::class,
+     'Mollie' => PeterIcebear\Mollie\Facades\Mollie::class,

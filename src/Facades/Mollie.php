@@ -1,6 +1,6 @@
 <?php
 
-namespace petericebear\Mollie\Facades;
+namespace PeterIcebear\Mollie\Facades;
 
 class Mollie extends \Illuminate\Support\Facades\Facade
 {

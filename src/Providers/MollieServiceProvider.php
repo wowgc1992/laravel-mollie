@@ -1,6 +1,6 @@
 <?php
 
-namespace petericebear\Mollie;
+namespace PeterIcebear\Mollie\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

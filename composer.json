@@ -2,7 +2,7 @@
   "name": "petericebear/laravel-mollie",
   "description": "Laravel 5 wrapper for payment provider mollie",
   "keywords": ["laravel", "mollie"],
-  "homepage": "https://github.com/3wsnl/laravel-mollie",
+  "homepage": "http://3ws.nl",
   "license": "MIT",
   "authors": [
     {
@@ -16,7 +16,7 @@
   },
   "autoload": {
     "psr-4": {
-      "petericebear\\Mollie\\": "src"
+      "PeterIcebear\\Mollie\\": "src"
     }
   }
 }
