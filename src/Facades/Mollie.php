@@ -5,7 +5,7 @@ namespace PeterIcebear\Mollie\Facades;
 class Mollie extends \Illuminate\Support\Facades\Facade
 {
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     protected static function getFacadeAccessor()
     {
