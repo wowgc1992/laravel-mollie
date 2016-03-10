@@ -3,6 +3,7 @@
 namespace PeterIcebear\Mollie\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use PeterIcebear\Mollie\MollieApiClientManager;
 
 class MollieServiceProvider extends ServiceProvider
 {
