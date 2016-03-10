@@ -1,0 +1,22 @@
+{
+  "name": "petericebear/laravel-mollie",
+  "description": "Laravel 5 wrapper for payment provider mollie",
+  "keywords": ["laravel", "mollie"],
+  "homepage": "https://github.com/3wsnl/laravel-mollie",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Peter Steenbergen",
+      "email": "psteenbergen@gmail.com"
+    }
+  ],
+  "require": {
+    "illuminate/support": "5.0.*|5.1.*|5.2.*",
+    "mollie/mollie-api-php": "1.4.x"
+  },
+  "autoload": {
+    "psr-4": {
+      "petericebear\\Mollie\\": "src"
+    }
+  }
+}
