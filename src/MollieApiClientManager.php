@@ -12,15 +12,15 @@ class MollieApiClientManager
     protected $app;
 
     /**
-     * The default settings
+     * The default settings.
      */
     protected $config;
 
     /**
      * Create a new Mollie instance.
      *
-     * @param  \Illuminate\Foundation\Application $app
-     * @param array $config
+     * @param \Illuminate\Foundation\Application $app
+     * @param array                              $config
      */
     public function __construct($app, $config = [])
     {
@@ -30,6 +30,7 @@ class MollieApiClientManager
 
     /**
      * @return \Mollie_API_Client
+     *
      * @throws \Mollie_API_Exception
      */
     public function client()
@@ -76,5 +77,4 @@ class MollieApiClientManager
     {
         return $this->client()->methods;
     }
-
 }
