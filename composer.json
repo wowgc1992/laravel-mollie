@@ -24,6 +24,7 @@
   },
   "require-dev": {
     "graham-campbell/testbench": "~3.0",
+    "illuminate/contracts": "5.0.*|5.1.*|5.2.*",
     "mockery/mockery": "^0.9.4",
     "phpunit/phpunit": "^4.8|^5.0"
   },

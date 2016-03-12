@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'testing' => env('MOLLIE_TEST_MODE', false),
+    'test_mode' => env('MOLLIE_TEST_MODE', false),
 
     'api_keys' => [
         'test' => env('MOLLIE_TEST_KEY', ''),
