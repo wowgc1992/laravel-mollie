@@ -3,6 +3,12 @@
 This is a package to integrate [Mollie](https://github.com/mollie/mollie-api-php) with Laravel 5.x.
 You can use it to easily manage your configuration, and use the Facade to provide shortcuts to the Mollie Client.
 
+<p align="center">
+<a href="https://travis-ci.org/petericebear/laravel-mollie"><img src="https://img.shields.io/travis/petericebear/laravel-mollie/master.svg?style=flat-square" alt="Build Status"></img></a>
+<a href="LICENSE.md"><img src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square" alt="Software License"></img></a>
+<a href="https://github.com/petericebear/laravel-mollie/releases"><img src="https://img.shields.io/github/release/petericebear/laravel-mollie.svg?style=flat-square" alt="Latest Version"></img></a>
+</p>
+
 ## Install
 
 Via Composer
