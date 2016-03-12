@@ -2,10 +2,10 @@
 
 namespace PeterIcebear\Tests\Mollie;
 
-use PeterIcebear\Mollie\MollieApiClientManager;
 use GrahamCampbell\TestBench\AbstractTestCase as AbstractTestBenchTestCase;
 use Illuminate\Contracts\Foundation\Application;
 use Mockery;
+use PeterIcebear\Mollie\MollieApiClientManager;
 
 class ClientTest extends AbstractTestBenchTestCase
 {
@@ -36,7 +36,7 @@ class ClientTest extends AbstractTestBenchTestCase
     }
 
     /**
-     * Test if the MollieApiClientManager can be constructed
+     * Test if the MollieApiClientManager can be constructed.
      */
     public function test_it_can_be_constructed()
     {
