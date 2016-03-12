@@ -20,7 +20,7 @@ class MollieApiClientManager
      * Create a new Mollie instance.
      *
      * @param \Illuminate\Foundation\Application $app
-     * @param array                              $config
+     * @param array $config
      */
     public function __construct($app, $config = [])
     {
@@ -29,9 +29,9 @@ class MollieApiClientManager
     }
 
     /**
-     * @return \Mollie_API_Client
-     *
      * @throws \Mollie_API_Exception
+     *
+     * @return \Mollie_API_Client
      */
     public function client()
     {

@@ -13,7 +13,7 @@ class MollieServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../../config/mollie.php' => config_path('mollie.php'),
+            __DIR__ . '/../../config/mollie.php' => config_path('mollie.php'),
         ], 'config');
     }
 
@@ -23,7 +23,7 @@ class MollieServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__.'/../../config/mollie.php', 'mollie'
+            __DIR__ . '/../../config/mollie.php', 'mollie'
         );
 
         $this->app['mollie'] = $this->app->share(function ($app) {
@@ -40,6 +40,6 @@ class MollieServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return array('mollie');
+        return ['mollie'];
     }
 }

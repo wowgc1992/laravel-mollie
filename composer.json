@@ -1,7 +1,10 @@
 {
   "name": "petericebear/laravel-mollie",
   "description": "Laravel 5 wrapper for payment provider mollie",
-  "keywords": ["laravel", "mollie"],
+  "keywords": [
+    "laravel",
+    "mollie"
+  ],
   "homepage": "http://3ws.nl",
   "license": "MIT",
   "authors": [
@@ -17,6 +20,16 @@
   "autoload": {
     "psr-4": {
       "PeterIcebear\\Mollie\\": "src"
+    }
+  },
+  "require-dev": {
+    "graham-campbell/testbench": "~3.0",
+    "mockery/mockery": "^0.9.4",
+    "phpunit/phpunit": "^4.8|^5.0"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "PeterIcebear\\Tests\\Mollie\\": "tests"
     }
   }
 }
