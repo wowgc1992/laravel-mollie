@@ -6,8 +6,8 @@ You can use it to easily manage your configuration, and use the Facade to provid
 <p align="center">
 <a href="https://travis-ci.org/petericebear/laravel-mollie"><img src="https://img.shields.io/travis/petericebear/laravel-mollie/master.svg?style=flat-square" alt="Build Status"></img></a>
 <a href="https://styleci.io/repos/53579169"><img src="https://styleci.io/repos/53579169/shield" alt="StyleCI"></a>
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/petericebear/laravel-mollie/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/petericebear/laravel-mollie/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/petericebear/laravel-mollie/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/petericebear/laravel-mollie/?branch=master)
+<a href="https://scrutinizer-ci.com/g/petericebear/laravel-mollie/"><img src="https://scrutinizer-ci.com/g/petericebear/laravel-mollie/badges/quality-score.png?b=master" title="Scrutinizer Code Quality"></a>
+<a href="https://scrutinizer-ci.com/g/petericebear/laravel-mollie/"><img src="https://scrutinizer-ci.com/g/petericebear/laravel-mollie/badges/coverage.png?b=master" alt="Code Coverage"></a>
 <a href="LICENSE.md"><img src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square" alt="Software License"></img></a>
 <a href="https://packagist.org/packages/petericebear/laravel-mollie"><img src="https://img.shields.io/packagist/dt/petericebear/laravel-mollie.svg?style=flat-square" alt="Total Downloads"></img></a>
 <a href="https://github.com/petericebear/laravel-mollie/releases"><img src="https://img.shields.io/github/release/petericebear/laravel-mollie.svg?style=flat-square" alt="Latest Version"></img></a>
@@ -20,7 +20,7 @@ To use the Mollie API client, the following things are required:
 + Create a new [Website profile](https://www.mollie.com/beheer/account/profielen/) to generate API keys (live and test mode) and setup your webhook.
 + Now you're ready to use the Mollie API client in test mode.
 + In order to accept payments in live mode, payment methods must be activated in your account. Follow [a few of steps](https://www.mollie.com/beheer/diensten), and let us handle the rest.
-+ PHP >= 5.2
++ PHP >= 5.2 although Laravel itself requires a higher PHP version
 + PHP cURL extension
 + Up-to-date OpenSSL (or other SSL/TLS toolkit)
 + SSL v3 disabled. Mollie does not support SSL v3 anymore.
@@ -114,7 +114,7 @@ be refunded through our API at the moment.
     $payment = Mollie::getPayments()->get($payment->id);
 
     // Refund € 15 of this payment
-    $refund = Mollie::getPayments->refund($payment, 15.00);
+    $refund = Mollie::getPayments()->refund($payment, 15.00);
 ```
 
 ## More information
