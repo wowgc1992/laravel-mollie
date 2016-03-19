@@ -11,13 +11,16 @@ class ClientTest extends AbstractTestBenchTestCase
 {
     protected $application_mock;
     protected $application_config;
+    protected $application_live_config;
     protected $client;
+    protected $client_live;
 
     protected function setUp()
     {
         $this->setUpMocks();
 
         $this->client = new MollieApiClientManager($this->application_mock, $this->application_config);
+        $this->client_live = new MollieApiClientManager($this->application_mock, $this->application_live_config);
 
         parent::setUp();
     }
@@ -27,6 +30,14 @@ class ClientTest extends AbstractTestBenchTestCase
         $this->application_mock = Mockery::mock(Application::class);
         $this->application_config = [
             'test_mode' => true,
+
+            'api_keys' => [
+                'test' => 'test_dummy',
+                'live' => 'live_dummy',
+            ],
+        ];
+        $this->application_live_config = [
+            'test_mode' => false,
 
             'api_keys' => [
                 'test' => 'test_dummy',
@@ -46,6 +57,11 @@ class ClientTest extends AbstractTestBenchTestCase
     public function testClientMethod()
     {
         $this->assertInstanceOf(\Mollie_API_Client::class, $this->client->client());
+    }
+
+    public function testLiveClientMethod()
+    {
+        $this->assertInstanceOf(\Mollie_API_Client::class, $this->client_live->client());
     }
 
     public function testGetPaymentsMethod()

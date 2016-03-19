@@ -1,2 +1,5 @@
-vendor/
+build
+docs
+vendor
 composer.lock
+coverage.clover
