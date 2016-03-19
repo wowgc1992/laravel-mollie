@@ -6,6 +6,8 @@ You can use it to easily manage your configuration, and use the Facade to provid
 <p align="center">
 <a href="https://travis-ci.org/petericebear/laravel-mollie"><img src="https://img.shields.io/travis/petericebear/laravel-mollie/master.svg?style=flat-square" alt="Build Status"></img></a>
 <a href="https://styleci.io/repos/53579169"><img src="https://styleci.io/repos/53579169/shield" alt="StyleCI"></a>
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/petericebear/laravel-mollie/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/petericebear/laravel-mollie/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/petericebear/laravel-mollie/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/petericebear/laravel-mollie/?branch=master)
 <a href="LICENSE.md"><img src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square" alt="Software License"></img></a>
 <a href="https://packagist.org/packages/petericebear/laravel-mollie"><img src="https://img.shields.io/packagist/dt/petericebear/laravel-mollie.svg?style=flat-square" alt="Total Downloads"></img></a>
 <a href="https://github.com/petericebear/laravel-mollie/releases"><img src="https://img.shields.io/github/release/petericebear/laravel-mollie.svg?style=flat-square" alt="Latest Version"></img></a>
