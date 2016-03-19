@@ -14,7 +14,6 @@
     }
   ],
   "require": {
-    "php": ">=5.5.9",
     "illuminate/support": "5.0.*|5.1.*|5.2.*",
     "mollie/mollie-api-php": "1.4.x"
   },
@@ -24,6 +23,8 @@
     }
   },
   "require-dev": {
+    "php": ">=5.5.9",
+    "scrutinizer/ocular": "~1.1",
     "graham-campbell/testbench": "~3.0",
     "illuminate/contracts": "5.0.*|5.1.*|5.2.*",
     "mockery/mockery": "^0.9.4",
