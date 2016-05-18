@@ -15,7 +15,7 @@
   ],
   "require": {
     "illuminate/support": "5.0.*|5.1.*|5.2.*",
-    "mollie/mollie-api-php": "1.4.x"
+    "mollie/mollie-api-php": "1.5.x"
   },
   "autoload": {
     "psr-4": {
