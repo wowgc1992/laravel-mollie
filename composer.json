@@ -14,8 +14,8 @@
     }
   ],
   "require": {
-    "illuminate/support": "5.0.*|5.1.*|5.2.*",
-    "mollie/mollie-api-php": "1.5.x"
+    "illuminate/support": "5.0.*|5.1.*|5.2.*|5.3.*",
+    "mollie/mollie-api-php": "1.6.x"
   },
   "autoload": {
     "psr-4": {
@@ -26,7 +26,7 @@
     "php": ">=5.5.9",
     "scrutinizer/ocular": "~1.1",
     "graham-campbell/testbench": "~3.0",
-    "illuminate/contracts": "5.0.*|5.1.*|5.2.*",
+    "illuminate/contracts": "5.0.*|5.1.*|5.2.*|5.3.*",
     "mockery/mockery": "^0.9.4",
     "phpunit/phpunit": "^4.8|^5.0"
   },
