@@ -32,16 +32,16 @@ class ClientTest extends AbstractTestBenchTestCase
             'test_mode' => true,
 
             'api_keys' => [
-                'test' => 'test_dummy',
-                'live' => 'live_dummy',
+                'test' => 'test_111111111111111111111111111111',
+                'live' => 'live_111111111111111111111111111111',
             ],
         ];
         $this->application_live_config = [
             'test_mode' => false,
 
             'api_keys' => [
-                'test' => 'test_dummy',
-                'live' => 'live_dummy',
+                'test' => 'test_222222222222222222222222222222',
+                'live' => 'live_222222222222222222222222222222',
             ],
         ];
     }
