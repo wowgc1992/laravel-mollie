@@ -57,7 +57,7 @@ class MollieApiClientManager
     /**
      * @return \Mollie_API_Resource_Payments_Refunds
      */
-    public function getPaymentRefunds()
+    public function getPaymentsRefunds()
     {
         return $this->client()->payments_refunds;
     }
@@ -76,5 +76,37 @@ class MollieApiClientManager
     public function getMethods()
     {
         return $this->client()->methods;
+    }
+
+    /**
+     * @return \Mollie_API_Resource_Customers
+     */
+    public function getCustomers()
+    {
+        return $this->client()->customers;
+    }
+
+    /**
+     * @return \Mollie_API_Resource_Customers_Payments
+     */
+    public function getCustomersPayments()
+    {
+        return $this->client()->customers_payments;
+    }
+
+    /**
+     * @return \Mollie_API_Resource_Customers_Mandates
+     */
+    public function getCustomersMandates()
+    {
+        return $this->client()->customers_mandates;
+    }
+
+    /**
+     * @return \Mollie_API_Resource_Customers_Subscriptions
+     */
+    public function getCustomersSubscriptions()
+    {
+        return $this->client()->customers_subscriptions;
     }
 }

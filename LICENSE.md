@@ -1,6 +1,6 @@
 # The MIT License (MIT)
 
-Copyright (c) 2016 3WS Internet Oplossingen (3ws.nl). - Peter Steenbergen <peter@3ws.nl>
+Copyright (c) 2017 3WS Internet Oplossingen (3ws.nl). - Peter Steenbergen <peter@3ws.nl>
 
 > Permission is hereby granted, free of charge, to any person obtaining a copy
 > of this software and associated documentation files (the "Software"), to deal

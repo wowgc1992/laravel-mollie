@@ -32,16 +32,16 @@ class ClientTest extends AbstractTestBenchTestCase
             'test_mode' => true,
 
             'api_keys' => [
-                'test' => 'test_dummy',
-                'live' => 'live_dummy',
+                'test' => 'test_111111111111111111111111111111',
+                'live' => 'live_111111111111111111111111111111',
             ],
         ];
         $this->application_live_config = [
             'test_mode' => false,
 
             'api_keys' => [
-                'test' => 'test_dummy',
-                'live' => 'live_dummy',
+                'test' => 'test_222222222222222222222222222222',
+                'live' => 'live_222222222222222222222222222222',
             ],
         ];
     }
@@ -69,14 +69,34 @@ class ClientTest extends AbstractTestBenchTestCase
         $this->assertInstanceOf(\Mollie_API_Resource_Payments::class, $this->client->getPayments());
     }
 
-    public function testGetPaymentRefundsMethod()
+    public function testGetPaymentsRefundsMethod()
     {
-        $this->assertInstanceOf(\Mollie_API_Resource_Payments_Refunds::class, $this->client->getPaymentRefunds());
+        $this->assertInstanceOf(\Mollie_API_Resource_Payments_Refunds::class, $this->client->getPaymentsRefunds());
     }
 
     public function testGetIssuersMethod()
     {
         $this->assertInstanceOf(\Mollie_API_Resource_Issuers::class, $this->client->getIssuers());
+    }
+
+    public function testGetCustomersMethod()
+    {
+        $this->assertInstanceOf(\Mollie_API_Resource_Customers::class, $this->client->getCustomers());
+    }
+
+    public function testGetCustomersPaymentsMethod()
+    {
+        $this->assertInstanceOf(\Mollie_API_Resource_Customers_Payments::class, $this->client->getCustomersPayments());
+    }
+
+    public function testGetCustomersMandatesMethod()
+    {
+        $this->assertInstanceOf(\Mollie_API_Resource_Customers_Mandates::class, $this->client->getCustomersMandates());
+    }
+
+    public function testGetCustomersSubscriptionsMethod()
+    {
+        $this->assertInstanceOf(\Mollie_API_Resource_Customers_Subscriptions::class, $this->client->getCustomersSubscriptions());
     }
 
     public function testGetMethodsMethod()
