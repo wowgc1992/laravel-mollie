@@ -26,11 +26,8 @@ class MollieServiceProvider extends ServiceProvider
             __DIR__.'/../../config/mollie.php', 'mollie'
         );
 
-        $this->app['mollie'] = $this->app->share(function ($app) {
-            $config = $app['config']->get('mollie');
-
-            return new MollieApiClientManager($app, $config);
-        });
+        $config = $this->app['config']->get('mollie');
+        $this->app->instance('mollie', new MollieApiClientManager($this->app, $config));
     }
 
     /**
