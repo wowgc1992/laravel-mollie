@@ -16,7 +16,7 @@ You can use it to easily manage your configuration, and use the Facade to provid
 ## Requirements
 To use the Mollie API client, the following things are required:
 
-+ Get yourself a free [Mollie account](https://www.mollie.com/aanmelden). No sign up costs.
++ Get yourself a free [Mollie account](https://www.mollie.com/dashboard/signup/1818551?lang=nl). No sign up costs.
 + Create a new [Website profile](https://www.mollie.com/beheer/account/profielen/) to generate API keys (live and test mode) and setup your webhook.
 + Now you're ready to use the Mollie API client in test mode.
 + In order to accept payments in live mode, payment methods must be activated in your account. Follow [a few of steps](https://www.mollie.com/beheer/diensten), and let us handle the rest.
