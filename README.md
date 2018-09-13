@@ -50,6 +50,13 @@ To use the Facade (`\Mollie::getMethods()` instead of `App::make('mollie')->getM
 ``` php
 'Mollie' => PeterIcebear\Mollie\Facades\Mollie::class,
 ```
+## setup Mollie API-key and select testmode (or live) in your .env 
+
+``` php
+MOLLIE_TEST_MODE=true
+MOLLIE_TEST_KEY=test_key
+MOLLIE_LIVE_KEY=live_key
+```
 
 ## Usage of the wrapper
 
